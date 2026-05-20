@@ -21,20 +21,20 @@
 <body>
 
     <h2>Circle Properties Calculator</h2>
-    <p>This page demonstrates the calculation of a circle's properties (Radius = 5).</p>
+    <p>Radius = 5</p>
     
     <div class="output-box" id="output">
         </div>
 
     <script>
-        // 取得要顯示結果的 HTML 元素
+    
         const displayDiv = document.getElementById("output");
 
-        // 題目要求 1：建立 calcCircumfrence 函式
+        //calcCircumfrence 函式
         function calcCircumfrence(radius) {
             // 計算圓周長 (2 * pi * r)
             let circumference = 2 * Math.PI * radius;
-            // 組合題目要求的輸出文字
+
             let outputText = "The circumference is " + circumference;
             
             // 輸出結果 (顯示在網頁上，同時也印在 console)
@@ -42,11 +42,11 @@
             displayDiv.innerHTML += "<p>" + outputText + "</p>";
         }
 
-        // 題目要求 2：建立 calcArea 函式
+        // calcArea 函式
         function calcArea(radius) {
-            // 計算圓面積 (pi * r^2)
+            // 圓面積
             let area = Math.PI * (radius * radius);
-            // 組合題目要求的輸出文字
+            
             let outputText = "The area is " + area;
             
             // 輸出結果 (顯示在網頁上，同時也印在 console)
@@ -54,8 +54,7 @@
             displayDiv.innerHTML += "<p>" + outputText + "</p>";
         }
 
-        // 實際呼叫函式來展示結果 (Demonstrate functions as described)
-        // 這裡假設半徑為 5 來進行計算示範
+        // 實際呼叫
         calcCircumfrence(5);
         calcArea(5);
     </script>
